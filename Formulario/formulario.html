@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulário de Jogos</title>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<h1>Pesquisa de Jogos</h1>
+		</header>
+
+		<main>
+			<div class="centralizacao">
+				<form class="fundo">
+					<div class="informacoes">
+						<label for="nome" id="nome"> Nome </label>
+						<input type="text" class="input-padrao"required placeholder="Nome">
+
+						<label for="email" id="email" > Email </label>
+						<input type="text" class="input-padrao" required placeholder="email@dominio.com.br">
+
+						<label for="idade" id="idade"> Idade </label>
+						<input type="number" class="input-padrao" required min="10" max="99" placeholder="Idade">
+					</div>
+
+					<div class="ocupacao">
+						<legend>Qual sua ocupação?</legend>
+						<select>
+							<option disabled selected value>Selecione sua ocupação atual</option>
+							<option>Estudante</option>
+							<option>Empregado</option>
+							<option>Desempregado</option>
+							<option>Prefiro não mencionar</option>
+							<option>Outro</option>
+						</select>
+					</div>
+
+					<div class="plataforma">
+						<legend>Qual plataforma você mais utiliza para jogar?</legend>
+						<label for="checkbox-computador"><input type="checkbox" name="plataforma" value="computador" id="radio-email" checked> Computador </label>
+						
+						<label for="checkbox-console"> <input type="checkbox" name="plataforma" value="console" id="radio-telefone"> Console </label>
+						
+						<label for="checkbox-celular"><input type="checkbox" name="plataforma" value="celular" id="radio-whatsapp"> Celular </label>
+					</div>
+
+					<div class="estilo">
+						<legend>Qual seu estilo de jogo preferido?</legend>
+						<select>
+							<option disabled selected value>Selecione o estilo de jogo</option>
+							<option>FPS</option>
+							<option>MOBA</option>
+							<option>RPG</option>
+							<option>Ação</option>
+							<option>Outro</option>
+						</select>
+					</div>
+
+					<div class="jogo-preferido">
+						<legend>Baseado na resposta anterior, qual seu jogo preferido?</legend>
+						<select>
+							<option disabled selected value>Selecione o jogo</option>
+							<option>Fortnite</option>
+							<option>Counter Strike:GO</option>
+							<option>League of Legends</option>
+							<option>Free Fire</option>
+							<option>Roblox</option>
+							<option>Minecraft</option>
+							<option>Valorant</option>
+							<option>DOTA 2</option>
+							<option>Outro</option>
+						</select>
+					</div>
+
+					<div class="experiencia">
+						<legend>Como classificaria sua experiência com o jogo?</legend>
+						<label><input type="radio" name="experiencia" value="0" class="input-radio"> 0 </label>
+						<label><input type="radio" name="experiencia" value="1" class="input-radio"> 1 </label>
+						<label><input type="radio" name="experiencia" value="2" class="input-radio"> 2 </label>
+						<label><input type="radio" name="experiencia" value="3" class="input-radio"> 3 </label>
+						<label><input type="radio" name="experiencia" value="4" class="input-radio"> 4 </label>
+						<label><input type="radio" name="experiencia" value="5" class="input-radio" checked> 5 </label>
+						<label><input type="radio" name="experiencia" value="6" class="input-radio"> 6 </label>
+						<label><input type="radio" name="experiencia" value="7" class="input-radio"> 7 </label>
+						<label><input type="radio" name="experiencia" value="8" class="input-radio"> 8 </label>
+						<label><input type="radio" name="experiencia" value="9" class="input-radio"> 9 </label>
+						<label><input type="radio" name="experiencia" value="10" class="input-radio"> 10 </label>
+					</div>
+
+					<p id="sugestao">Alguma sugestão para que os jogadores do seu jogo preferido tenham uma experiência melhor?</p>
+					<textarea cols="50" rows="10" id="mensagem" class="input-texto" placeholder="Dê sua sugestão"></textarea>
+
+					<button type="button" class="enviar">Enviar formulário</button>
+
+					<p id="agradecimento">Obrigado por ajudar a entender o mercado de jogos :)</p>
+				</form>
+			</div>
+			
+		</main>
+	</body>
+</html>
